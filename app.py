@@ -11,7 +11,7 @@ import os
 import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
-from fbprophet import Prophet
+from prophet import Prophet
 import plotly.graph_objs as go
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
