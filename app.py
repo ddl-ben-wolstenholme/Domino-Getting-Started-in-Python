@@ -16,7 +16,8 @@ import plotly.graph_objs as go
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+# app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
 
 app.config.update({'requests_pathname_prefix': '/{}/{}/r/notebookSession/{}/'.format(
   os.environ.get("DOMINO_PROJECT_OWNER"),
